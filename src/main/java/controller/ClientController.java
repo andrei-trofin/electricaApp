@@ -91,7 +91,11 @@ public class ClientController {
             return "Year can't be 0 or less!";
         }
     }
-    
+
+    public int getClientsSize() {
+        return this.dataManager.getClients().size();
+    }
+
     public String ListIssue(Client c){
         String s = "";
         String pen = "";
